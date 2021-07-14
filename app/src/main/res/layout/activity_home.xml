@@ -4,28 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".HomeActivity"
+    android:background="@drawable/budgetbg">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="\n\n\n\n\n BUDGET MANAGEMENT"
+        android:text="\n\n\n\n\n BUDGET MANAGEMENT\n"
         android:id="@+id/head"
         android:textAlignment="center"
         android:textStyle="bold"
         android:textSize="30dp"
-        android:fontFamily="sans-serif"
-        android:textColor="#191970"/>
+        android:fontFamily="cursive"
+        android:textColor="@color/white"/>
     <Button
         android:id="@+id/buttonSignIN"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Sign In"
         android:layout_below="@+id/head"
+        android:textColor="@color/black"
+        android:backgroundTint="@android:color/holo_green_dark"
         android:onClick="signIn"/>
     <Button
         android:id="@+id/buttonSignUP"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/buttonSignIN"
+        android:textColor="@color/black"
+        android:backgroundTint="@android:color/holo_green_dark"
         android:text="Sign Up" />
 </RelativeLayout>

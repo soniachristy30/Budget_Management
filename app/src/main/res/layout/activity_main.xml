@@ -5,26 +5,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@android:color/darker_gray">
+    android:background="@drawable/budgetbg">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="\n\nBudget Management"
-        android:textSize="50dp"
-        android:textColor="@android:color/holo_red_dark"
-        android:fontFamily="cursive"
         android:id="@+id/heading"
-        android:textAlignment="center"/>
-
-    <TextView
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="\n  Budget Management\n"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="50dp" />
+    <Button
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/heading"
-        android:layout_marginTop="-537dp"
-        android:text="\n\n\nBudget Management is an application used for keeping track and achiving our budget goal."
-        android:textAlignment="center"
+        android:text="Amount"
         android:textColor="@color/black"
-        android:textSize="30dp" />
-
+        android:backgroundTint="@android:color/holo_green_dark"/>
+    <Button
+        android:id="@+id/expense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amount"
+        android:text="Expense"
+        android:textColor="@color/black"
+        android:backgroundTint="@android:color/holo_green_dark"/>
+    <Button
+        android:id="@+id/report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/expense"
+        android:text="View Report"
+        android:textColor="@color/black"
+        android:backgroundTint="@android:color/holo_green_dark"/>
 </RelativeLayout>

@@ -4,22 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpActivity">
+    tools:context=".SignUpActivity"
+    android:background="@drawable/budgetbg">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="\n\n\n\n\nREGISTER"
         android:textAlignment="center"
         android:id="@+id/reghead"
-        android:textSize="25dp"
+        android:textSize="30dp"
         android:textStyle="bold"
-        android:fontFamily="sans-serif"
-        android:textColor="#191970"/>
+        android:fontFamily="cursive"
+        android:textColor="@color/white"/>
     <EditText
         android:id="@+id/editTextUserName"
         android:layout_below="@+id/reghead"
         android:hint="User Name"
         android:textAlignment="center"
+        android:backgroundTint="@android:color/darker_gray"
+        android:textColorHint="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
@@ -30,6 +33,8 @@
         android:layout_height="wrap_content"
         android:hint="Password"
         android:textAlignment="center"
+        android:backgroundTint="@android:color/darker_gray"
+        android:textColorHint="@color/white"
         android:layout_below="@id/editTextUserName"
         android:inputType="textPassword" />
     <EditText
@@ -38,6 +43,8 @@
         android:layout_height="wrap_content"
         android:hint="Confirm Password"
         android:textAlignment="center"
+        android:backgroundTint="@android:color/darker_gray"
+        android:textColorHint="@color/white"
         android:layout_below="@id/editTextPassword"
         android:inputType="textPassword" />
 
@@ -46,13 +53,17 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/editTextConfirmPassword"
-        android:text="Create Account" />
+        android:text="Create Account"
+        android:textColor="@color/black"
+        android:backgroundTint="@android:color/holo_green_dark"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btnback"
         android:layout_below="@id/buttonCreateAccount"
         android:text="GO BACK"
+        android:textColor="@color/black"
+        android:backgroundTint="@android:color/holo_green_dark"
         android:onClick="back"/>
 
 </RelativeLayout>

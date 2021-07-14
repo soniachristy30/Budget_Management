@@ -4,31 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginDataBaseAdapter">
-    //android:background="@drawable/bgpic1"//
+    tools:context=".LoginDataBaseAdapter"
+    android:background="@drawable/budgetbg">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="\n\n\n\n\nLOGIN"
         android:textAlignment="center"
+        android:fontFamily="cursive"
         android:id="@+id/loghead"
-        android:textSize="25dp"
-        android:fontFamily="sans-serif"
-        android:textColor="#191970"/>
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editTextUserNameToLogin"
         android:layout_below="@id/loghead"
         android:hint="User Name"
+        android:textColor="@color/white"
         android:textAlignment="center"
+        android:backgroundTint="@android:color/darker_gray"
+        android:textColorHint="@color/white"
         android:textSize="25dp" >
     </EditText>
     <EditText
         android:id="@+id/editTextPasswordToLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:textAlignment="center"
+        android:backgroundTint="@android:color/darker_gray"
+        android:textColorHint="@color/white"
         android:textSize="25dp"
         android:layout_below="@id/editTextUserNameToLogin"
         android:inputType="textPassword"
@@ -38,6 +45,9 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/editTextPasswordToLogin"
-        android:text="Sign In" />
+        android:textSize="25dp"
+        android:text="Sign In"
+        android:textColor="@color/black"
+        android:backgroundTint="@android:color/holo_green_dark"/>
 
 </RelativeLayout>
