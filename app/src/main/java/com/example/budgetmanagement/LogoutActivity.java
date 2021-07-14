@@ -18,7 +18,7 @@ public class LogoutActivity extends AppCompatActivity {
         edt.clear();
         edt.commit();
         Toast.makeText(this,"Logged out successfully",Toast.LENGTH_LONG).show();
-        Intent in = new Intent(this, MainActivity.class);
+        Intent in = new Intent(this, HomeActivity.class);
         startActivity(in);
     }
 }

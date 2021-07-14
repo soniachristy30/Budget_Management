@@ -67,7 +67,7 @@ public class SignUpActivity extends AppCompatActivity {
         loginDataBaseAdapter.close();
     }
     public void back(View v){
-        Intent in= new Intent(this,MainActivity.class);
+        Intent in= new Intent(this,HomeActivity.class);
         startActivity(in);
 
     }

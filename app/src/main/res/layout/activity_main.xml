@@ -22,7 +22,7 @@
         android:layout_height="match_parent"
         android:layout_below="@id/heading"
         android:layout_marginTop="-537dp"
-        android:text="Budget Management is an application used for keeping track and achiving our budget goal."
+        android:text="\n\n\nBudget Management is an application used for keeping track and achiving our budget goal."
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="30dp" />
