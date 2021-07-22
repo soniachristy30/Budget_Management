@@ -1,21 +1,16 @@
 package com.example.budgetmanagement;
 
-import android.app.Dialog;
 import android.content.ContentValues;
 import android.content.Context;
-import android.content.Intent;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
-import android.os.Bundle;
+
 import java.util.ArrayList;
-import android.view.*;
-import android.widget.*;
 
 public class LoginDataBaseAdapter
 {
-    static final String DATABASE_NAME = "riverjewelry.db";
+    static final String DATABASE_NAME = "Budgetmanagement.db";
     static final int DATABASE_VERSION = 1;
     public static final int NAME_COLUMN = 1;
     public static final String tab = "LOGIN";

@@ -10,36 +10,35 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class HomeActivity extends Activity
-{
-    Button btnSignIn,btnSignUp,btnAdmin;
+public class HomeActivity extends Activity {
+    Button btnSignIn, btnSignUp;
     LoginDataBaseAdapter loginDataBaseAdapter;
     SharedPreferences pref;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        pref = getApplicationContext().getSharedPreferences("UserData",MODE_PRIVATE);
+        pref = getApplicationContext().getSharedPreferences("UserData", MODE_PRIVATE);
 // create a instance of SQLite Database
-        loginDataBaseAdapter=new LoginDataBaseAdapter(this);
-        loginDataBaseAdapter=loginDataBaseAdapter.open();
+        loginDataBaseAdapter = new LoginDataBaseAdapter(this);
+        loginDataBaseAdapter = loginDataBaseAdapter.open();
 
 // Get The Refference Of Buttons
-        btnSignIn=(Button)findViewById(R.id.buttonSignIN);
-        btnSignUp=(Button)findViewById(R.id.buttonSignUP);
+        btnSignIn = (Button) findViewById(R.id.buttonSignIN);
+        btnSignUp = (Button) findViewById(R.id.buttonSignUP);
 
-// Set OnClick Listener on SignUp button
+    // Set OnClick Listener on SignUp button
         btnSignUp.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
+        public void onClick (View v){
 // TODO Auto-generated method stub
 
 /// Create Intent for SignUpActivity abd Start The Activity
-                Intent intentSignUP=new Intent(getApplicationContext(),SignUpActivity.class);
-                startActivity(intentSignUP);
-            }
-        });
+        Intent intentSignUP = new Intent(getApplicationContext(), SignUpActivity.class);
+        startActivity(intentSignUP);
     }
+    });
+}
 
     // Methos to handleClick Event of Sign In Button
     public void signIn(View V)
@@ -73,7 +72,7 @@ public class HomeActivity extends Activity
                     SharedPreferences.Editor edt = pref.edit();
                     edt.putString("Name",userName);
                     edt.commit();
-                    Intent in1=new Intent(getApplicationContext(),MainActivity.class);
+                    Intent in1=new Intent(getApplicationContext(),WelcomeScreen.class);
                     startActivity(in1);
 
                 }
